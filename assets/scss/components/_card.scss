@@ -1,0 +1,181 @@
+/*陰影漸層*/
+.image-with-gradient {
+  /* 確保偽元素能相對於這個容器定位 */
+  position: relative;
+  /* 讓圖片能填滿這個容器 */
+  overflow: hidden;
+}
+
+.image-with-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3));
+  z-index: 1;
+}
+
+/*卡片樣式*/
+/*大卡片*/
+.card-lg-lg {
+  border-radius: 20px;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+  flex-shrink: 0;
+}
+// 大卡片下方的綠色橫條
+.card-lg-green-banner {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(82, 173, 64, 1);
+  width: 100%;
+  height: 61px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.card-lg-banner-text {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-lg-green-banner {
+    display: none;
+  }
+  .card-lg-lg {
+    border-radius: 20px;
+    gap: 10px;
+    overflow: hidden;
+    position: relative;
+    flex-shrink: 0;
+  }
+}
+
+/*中卡片*/
+.card-md {
+  width: 100%;
+  height: 189px;
+  border-radius: 16px;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+// 中卡片下方的綠色橫條
+.card-md-green-banner {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(82, 173, 64, 1);
+  width: 100%;
+  height: 53px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.card-md-banner-text {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+/*長卡片*/
+.card-long {
+  width: 100%;
+  height: 189px;
+  border-radius: 16px;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+}
+// 長卡片下方的綠色橫條
+.card-long-green-banner {
+  position: absolute;
+  bottom: 0;
+  z-index: 5;
+  background-color: rgba(82, 173, 64, 1);
+  width: 100%;
+  height: 53px;
+}
+.card-long-banner-text {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+/****************/
+.card-lg,
+.card-md,
+.card-long {
+  width: 100%; // 填滿格線欄位
+}
+
+/********/
+/* 手機版樣式 */
+@media (max-width: 768px) {
+  .card-lg-lg,
+  .card-md,
+  .card-long {
+    height: 150px;
+    height: 164px;
+  }
+  .card-lg-green-banner {
+    display: none;
+  }
+  .card-lg-banner-text,
+  .card-md-banner-text,
+  .card-long-banner-text {
+    font-size: 24px;
+    margin-left: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+/* 桌面版樣式 */
+@media (min-width: 768px) {
+  .card-lg-lg {
+    height: 390px;
+  }
+  .card-md {
+    height: 189px;
+  }
+  .card-long {
+    height: 189px;
+  }
+}
+
+/* 中卡片 */
+.card-md-banner-text {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+/* 長卡片 */
+.card-long-banner-text {
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}

@@ -5,11 +5,238 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+
+
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <h1 class="index-title">我是首頁</h1>
+
+    <div class="container-fluid mx-auto">
+      <div class="mask-wrapper d-flex flex-column align-items-center">
+        
+        <div class="masked-banner"></div>
+
+        <div class="index-search-solgan text-center mt-60">
+          <h1>為你挑食</h1>
+          <p class="">想吃不想吃的都可以</p>
+        </div>
+
+        <div class="search-box px-20 py-16">
+          <div class="search-box-left  row">
+
+            <div class="search-box-wannaeat text-start  d-flex  col-md-4 ">
+              <div class="mb-1">
+  
+                <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_74_1069)">
+                <path d="M13.4545 0.863525C13.3098 0.863525 13.1711 0.920993 13.0688 1.02329C12.9665 1.12558 12.909 1.26432 12.909 1.40898V4.68171C12.909 4.82637 12.8516 4.96511 12.7493 5.0674C12.647 5.16969 12.5083 5.22716 12.3636 5.22716H11.8181V1.40898C11.8181 1.26432 11.7607 1.12558 11.6584 1.02329C11.5561 0.920993 11.4173 0.863525 11.2727 0.863525C11.128 0.863525 10.9893 0.920993 10.887 1.02329C10.7847 1.12558 10.7272 1.26432 10.7272 1.40898V5.22716H10.1818C10.0371 5.22716 9.89837 5.16969 9.79608 5.0674C9.69379 4.96511 9.63632 4.82637 9.63632 4.68171V1.40898C9.63632 1.26432 9.57885 1.12558 9.47656 1.02329C9.37427 0.920993 9.23553 0.863525 9.09086 0.863525C8.9462 0.863525 8.80746 0.920993 8.70517 1.02329C8.60288 1.12558 8.54541 1.26432 8.54541 1.40898V5.22716C8.5474 5.78341 8.71944 6.32575 9.03844 6.78144C9.35744 7.23713 9.80816 7.58438 10.3301 7.77662L9.95541 15.2166C9.95948 15.345 9.98946 15.4711 10.0435 15.5876C10.0976 15.7041 10.1747 15.8084 10.2701 15.8943C10.3656 15.9802 10.4774 16.0459 10.5989 16.0875C10.7204 16.1291 10.849 16.1457 10.977 16.1363H11.5683C11.6964 16.1457 11.825 16.1291 11.9465 16.0875C12.068 16.0459 12.1798 15.9802 12.2752 15.8943C12.3707 15.8084 12.4477 15.7041 12.5018 15.5876C12.5559 15.4711 12.5859 15.345 12.59 15.2166L12.2147 7.77662C12.7371 7.58493 13.1882 7.23784 13.5074 6.78204C13.8266 6.32623 13.9985 5.7836 14 5.22716V1.40898C14 1.26432 13.9425 1.12558 13.8402 1.02329C13.7379 0.920993 13.5992 0.863525 13.4545 0.863525Z" fill="#9F6A00"/>
+                <path d="M4.72727 0.863525C3.22127 0.863525 2 3.02898 2 4.97516C2 6.49262 2.74564 7.42098 3.78636 7.76025L3.41 15.2166C3.41407 15.345 3.44405 15.4711 3.49813 15.5876C3.55222 15.7041 3.62929 15.8084 3.72473 15.8943C3.82016 15.9802 3.93198 16.0459 4.05346 16.0875C4.17494 16.1291 4.30358 16.1457 4.43164 16.1363H5.02291C5.15097 16.1457 5.2796 16.1291 5.40109 16.0875C5.52257 16.0459 5.63439 15.9802 5.72982 15.8943C5.82525 15.8084 5.90233 15.7041 5.95642 15.5876C6.0105 15.4711 6.04048 15.345 6.04455 15.2166L5.66818 7.76025C6.70891 7.42098 7.45455 6.49262 7.45455 4.97516C7.45455 3.02898 6.23327 0.863525 4.72727 0.863525Z" fill="#9F6A00"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_74_1069">
+                <rect width="16" height="16" fill="white" transform="translate(0 0.5)"/>
+                </clipPath>
+                </defs>
+                </svg>
+                <label for="inputText" class="form-label">我想吃</label>
+              </div>
+              <input type="text" id="inputText" class="form-control bg-transparent border border-0" aria-describedby="" placeholder="請輸入...">
+  
+            </div>
+  
+            <!-- <div class="search-box-divider border-end border-white">
+            </div> -->
+  
+            <div class="search-box-dnt mx-3 col-md-4 ">
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
+                  <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
+                </svg>
+                不要加
+              </p>
+              <div class="dropdown " id="myDropdown">
+                <button class="btn  dropdown-toggle" type="button" id="multiSelectDropdown" data-bs-toggle="dropdown" aria-expanded="false" aria-label="選擇項目">
+                  <div class="selected-items d-flex align-items-end"></div>
+                </button>
+                
+                <ul class="dropdown-menu" aria-labelledby="multiSelectDropdown">
+                  <li>
+                    <div class="dropdown-item">
+                      <input type="checkbox" value="薑" id="checkbox1">
+                      <label for="checkbox1" class=" mb-2">薑</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item ">
+                      <input type="checkbox" value="蒜" id="checkbox2">
+                      <label for="checkbox2" class=" mb-2">蒜</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item">
+                      <input type="checkbox" value="香菜" id="checkbox3">
+                      <label for="checkbox3" class=" mb-2">香菜</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item">
+                      <input type="checkbox" value="洋蔥" id="checkbox4">
+                      <label for="checkbox4" class=" mb-2">洋蔥</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item">
+                      <input type="checkbox" value="番茄" id="checkbox5">
+                      <label for="checkbox5" class=" mb-2">番茄</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown-item">
+                      <input type="checkbox" value="生菜" id="checkbox6">
+                      <label for="checkbox6" class=" mb-2">生菜</label>
+                    </div>
+                  </li>
+  
+                  <li>
+                    <div class="dropdown-item">
+                      <input type="checkbox" value="牛肉" id="checkbox6">
+                      <label for="checkbox6">牛肉</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+  
+            </div>
+  
+            <!-- <div class="search-box-divider border-end border-white">
+            </div> -->
+  
+            <div class="search-box-where mx-3 col-md-4">
+              <p class="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                </svg>
+                在哪裡
+              </p>
+              <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="whereDropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="where-selected-item ">台北市</span>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">台北市</a></li>
+                  <li><a class="dropdown-item" href="#">新北市</a></li>
+                  <li><a class="dropdown-item" href="#">桃園市</a></li>
+                  <li><a class="dropdown-item" href="#">新竹縣</a></li>
+                  <li><a class="dropdown-item" href="#">苗栗縣</a></li>
+                  <li><a class="dropdown-item" href="#">台中市</a></li>
+                  <li><a class="dropdown-item" href="#">彰化縣</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="search-button ">
+
+              <button type="button" class=" rounded-pill text-bg-success px-24 py-12 border border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+                <span class="ms-2">
+                  搜尋
+                </span>
+            </button>
+
+
+          </div>
+
+        </div>
+      </div>
+    
+      <div class="what-to-eat py-120  mx-auto">
+        <div class="background-top">
+
+        </div>
+        <div class="text-center eat-today">
+          <h2 class="my-12">今天想吃些什麼</h2>
+          <img src="/assets/images/Frame 68.png" alt="選個想吃的吧!" class="mb-40">
+        </div>
+
+
+        <div class="container-fluid mx-auto ">
+          <div class="row g-3">
+
+            <!-- 桌面版：左邊大卡片，手機版：每行兩張 -->
+            <!-- 日式料理大卡片 - 桌面版佔較大比例，手機版佔 50% -->
+            <div class="col-6 col-lg-5 ">
+              <div class="card-lg-lg image-with-gradient">
+                <img src="/assets/images/tuna-sushi.png" alt="壽司" class="japan-food">
+                <div class="card-lg-green-banner "></div>
+                <h3 class="card-lg-banner-text">日式料理</h3>
+              </div>
+            </div>
+  
+            <div class="col-lg-7 right-column col-6"> 
+              <div class="row g-3 h-100 right-column ">
+                <!-- 第一行 -->
+                <div class="col-6 col-md-4">
+                  <div class="card-md  image-with-gradient">
+                    <img src="/assets/images/pasta-with-tomato-sauce-parmesan.png" alt="義國風味">
+                    <h3 class="card-md-banner-text">義國風味</h3>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card-md  image-with-gradient">
+                    <img src="/assets/images/korean-food-fried-rice-with-kimchi-serve-with-fried-egg.png" alt="韓國美食">
+                    <h3 class="card-md-banner-text">韓國美食</h3>
+                  </div>
+                </div>
+                <!-- 第二行 -->
+                <div class="col-6 col-md-4">
+
+                  <div class="card-md  image-with-gradient">
+                    <img src="/assets/images/tom-kha-kai-pan-frying-with-kaffir-lime-leaves-lemongrass-red-onion-galangal-chilli.png" alt="泰式料理">
+                    <h3 class="card-md-banner-text">泰式料理</h3>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+
+                  <div class="card-md  image-with-gradient">
+                    <img src="/assets/images/front-view-delicious-meat-cheeseburger-with-french-fries-cutting-board-dark-background-fast-food-meal-snack-dinner-dish-sandwich.png" alt="美式經典">
+                    <h3 class="card-md-banner-text">美式經典</h3>
+                  </div>
+                </div>
+                <div class="col-6 col-md-8">
+                  <div class="card-long image-with-gradient">
+                    <img src="/assets/images/close-up-food-served-table.png" alt="台式小吃">
+                    <h3 class="card-long-banner-text">台式小吃</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+
+
+
+
+       
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+
+
+
 
     <div class="card" style="width: 18rem">
       <img src="../assets/images/dog.jpg" class="card-img-top" alt="cat" />
@@ -21,6 +248,12 @@
         </p>
       </div>
     </div>
+
+
+
+
+
+
 
     <!-- Modal 按鈕 -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -52,6 +285,64 @@
 
     <%- include('./layout/footer'); -%>
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="module" src="../main.js"></script>
-  </body>
+
+    <script>
+      $(document).ready(function() {
+        // 第一個下拉式選單的程式碼
+        const $dropdown = $('#myDropdown');
+        const $selectedItems = $dropdown.find('.selected-items');
+        const selectedValues = new Set();
+        const defaultSelectedValues = ['薑', '蒜'];
+
+        defaultSelectedValues.forEach(value => {
+          $dropdown.find(`input[type="checkbox"][value="${value}"]`).prop('checked', true);
+          selectedValues.add(value);
+        });
+
+        updateSelectedItemsDisplay();
+
+        $dropdown.on('click', 'input[type="checkbox"]', function(e) {
+          e.stopPropagation();
+          const value = $(this).val();
+          const isChecked = $(this).prop('checked');
+          if (isChecked) {
+            selectedValues.add(value);
+          } else {
+            selectedValues.delete(value);
+          }
+          updateSelectedItemsDisplay();
+        });
+
+        $selectedItems.on('click', '.remove-item', function(e) {
+          e.stopPropagation();
+          const valueToRemove = $(this).data('value');
+          selectedValues.delete(valueToRemove);
+          $dropdown.find(`input[value="${valueToRemove}"]`).prop('checked', false);
+          updateSelectedItemsDisplay();
+        });
+
+        function updateSelectedItemsDisplay() {
+          if (selectedValues.size === 0) {
+            $selectedItems.text('請選擇...');
+            return;
+          }
+          const itemsHtml = Array.from(selectedValues).map(value => {
+            return `<span class="badge me-1 my-selected-badge">${value} <span class="remove-item" data-value="${value}">&times;</span></span>`;
+          }).join('');
+          $selectedItems.html(itemsHtml);
+        }
+
+        // 第二個下拉式選單的程式碼
+        const whereDropdownButton = $('#whereDropdownButton');
+        $('.search-box-where .dropdown-item').on('click', function(e) {
+          e.preventDefault();
+          const selectedText = $(this).text();
+          whereDropdownButton.find('.where-selected-item').text(selectedText);
+        });
+      });
+    </script>
+    </body>
 </html>
