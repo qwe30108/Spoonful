@@ -109,7 +109,7 @@
 .search-box-left {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  // width: 100%;
   > div {
     // 直接子層 (.search-box-wannaeat / .search-box-dnt / .search-box-where)
     flex: 1; // 平均分配
