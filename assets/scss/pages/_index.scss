@@ -1,15 +1,24 @@
+// * {
+//   outline: 1px solid red;
+// }
+
 .mask-wrapper {
   position: relative;
   max-width: 1296px;
   height: 520px;
 
   margin: 0 auto;
+  // display: flex; // 設定為 Flex 容器
+  // flex-direction: column; // 垂直排列
+  // justify-content: start; // 垂直置中
+  // align-items: center; // 水平置中
 }
 
 /* 新的單一元素，同時設定背景圖和遮罩 */
 .masked-banner {
   position: absolute;
   top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 542px;
@@ -27,11 +36,11 @@
     left: 0;
     width: 100%;
     height: 542px;
-    background: rgba(0, 0, 0, 0.5); /* 這裡設定你想要的半透明顏色 */
+    background: rgba(0, 0, 0, 0.5);
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1200px) {
   .masked-banner {
     position: absolute;
     top: 0;
@@ -90,9 +99,10 @@
   border-radius: 24px;
   width: 90%;
   max-width: 800px;
+  position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .search-box {
     display: flex;
     color: rgba(159, 106, 0, 1);
@@ -108,17 +118,26 @@
 }
 .search-box-left {
   display: flex;
+  justify-content: center;
+
   flex-direction: column;
-  // width: 100%;
-  > div {
-    // 直接子層 (.search-box-wannaeat / .search-box-dnt / .search-box-where)
-    flex: 1; // 平均分配
-    min-width: 0; // 避免內容太長把其他擠爆
-  }
+  margin-right: auto;
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  align-items: center;
+  // > div {
+  //   // 直接子層 (.search-box-wannaeat / .search-box-dnt / .search-box-where)
+  //   // flex: 1; // 平均分配
+  //   min-width: 0; // 避免內容太長把其他擠爆
+  // }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 992px) {
   .search-box-left {
     flex-direction: row;
+    // flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 .search-box-divider {
@@ -139,10 +158,12 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  flex-grow: 1;
+  flex: 1;
   border-radius: 0.375rem;
   cursor: pointer;
   min-height: calc(1.5em + 0.75rem + 2px); /* 與按鈕高度保持一致 */
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 /* 讓已選標籤更美觀 */
@@ -170,20 +191,11 @@
   display: flex;
   align-items: start;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   width: 90%;
+  border-bottom: 1px solid white;
 }
-@media screen and (min-width: 768px) {
-  .search-box-wannaeat,
-  .search-box-dnt,
-  .search-box-where {
-    width: 100%;
-    max-width: 192px;
-  }
-}
-.search-box-wannaeat {
-  margin-left: 16px;
-}
+
 .search-box-wannaeat img {
   color: rgba(159, 106, 0, 1);
 }
@@ -191,6 +203,21 @@
 .selected-items button {
   padding-left: 0;
 }
+@media screen and (min-width: 992px) {
+  .search-box-wannaeat,
+  .search-box-dnt,
+  .search-box-where {
+    width: 100%;
+    max-width: 192px;
+
+    border-bottom: 0px solid white;
+  }
+  .search-box-wannaeat,
+  .search-box-dnt {
+    border-right: 1px solid white;
+  }
+}
+
 .my-selected-badge {
   /* 設定文字顏色 */
   color: rgba(195, 30, 30, 1);
@@ -304,6 +331,8 @@
   /* 讓按鈕的父容器也參與 flex 佈局，確保對齊 */
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+  // width: 100%;
 }
 .search-box-dnt p {
   margin-bottom: 4px; /* 移除底部預設邊距 */
@@ -311,14 +340,15 @@
 
 /* 讓按鈕與文字對齊 */
 .search-box-dnt .dropdown-toggle {
-  //display: flex; /* 設定為 flex 容器 */
+  display: flex; /* 設定為 flex 容器 */
   position: relative;
   align-items: center; /* 垂直置中對齊 */
   justify-content: space-between; /* 讓內容與箭頭分開，各據兩邊 */
-  width: 192px; /* 確保按鈕佔滿可用空間 */
+  // max-width: 192px; /* 確保按鈕佔滿可用空間 */
+  width: 100%;
   padding-left: 0;
   padding-top: 0;
-
+  flex-wrap: nowrap;
   border: none;
   color: rgba(159, 106, 0, 1);
 }
@@ -335,6 +365,7 @@
   border-bottom: 0;
   border-left: 0.3em solid transparent;
   color: rgba(44, 44, 44, 1);
+  margin-left: auto;
 }
 
 /* 讓按鈕與文字對齊 */
@@ -361,21 +392,19 @@
   right: 0;
   margin-left: auto;
 }
-.search-box-where .dropdown {
-  max-width: 192px;
-}
+// .search-box-where .dropdown {
+//   max-width: 192px;
+// }
 
 .dropdown {
   width: 100%;
-  // .dropdown-toggle {
-  //   width: 100%;
-  // }
 }
 
 .what-to-eat {
   position: relative;
-
-  z-index: 1;
+  // background: url(/assets/images/background-top.png) no-repeat center bottom;
+  // background-size: cover;
+  // z-index: 1;
   .container-fluid {
     max-width: 1296px; // 限制最大寬度
   }
@@ -383,12 +412,13 @@
 .background-top {
   position: absolute;
   top: 0;
-  bottom: 0;
-  left: calc(50% - 50vw);
-  right: calc(50% - 50vw);
+  bottom: 10%;
 
+  left: 0;
+  right: 0;
+  width: 100%;
   background: url(/assets/images/background-top.png) no-repeat center bottom;
-  background-size: cover;
+  background-size: contain;
   z-index: -1;
 }
 

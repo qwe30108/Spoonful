@@ -11,12 +11,13 @@
   <body>
     <%- include('./layout/header'); -%>
 
-    <h1 class="index-title">我是首頁</h1>
+    <!-- <h1 class="index-title">我是首頁</h1> -->
 
-    <div class="container-fluid mx-auto">
+    <div class="container mx-auto">
+      
       <div class="mask-wrapper d-flex flex-column align-items-center">
-        
         <div class="masked-banner"></div>
+        
 
         <div class="index-search-solgan text-center mt-60">
           <h1>為你挑食</h1>
@@ -26,7 +27,7 @@
         <div class="search-box px-20 py-16">
           <div class="search-box-left  row">
 
-            <div class="search-box-wannaeat text-start  d-flex  col-md-4 ">
+            <div class="search-box-wannaeat text-start  d-flex   col-md-3 ">
               <div class="mb-1">
   
                 <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,7 +50,7 @@
             <!-- <div class="search-box-divider border-end border-white">
             </div> -->
   
-            <div class="search-box-dnt mx-3 col-md-4 ">
+            <div class="search-box-dnt  col-md-3">
               <p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ban" viewBox="0 0 16 16">
                   <path d="M15 8a6.97 6.97 0 0 0-1.71-4.584l-9.874 9.875A7 7 0 0 0 15 8M2.71 12.584l9.874-9.875a7 7 0 0 0-9.874 9.874ZM16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0"/>
@@ -113,7 +114,7 @@
             <!-- <div class="search-box-divider border-end border-white">
             </div> -->
   
-            <div class="search-box-where mx-3 col-md-4">
+            <div class="search-box-where  col-md-3">
               <p class="">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill " viewBox="0 0 16 16">
                 <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -135,29 +136,27 @@
                 </ul>
               </div>
             </div>
+            <div class="search-button col-md-3">
+                <button type="button" class=" rounded-pill text-bg-success px-24 py-12 border border-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                  <span class="ms-2">
+                    搜尋
+                  </span>
+              </button>
+  
+            </div>
           </div>
-          <!-- <div class="search-button "> -->
-
-              <button type="button" class=" rounded-pill text-bg-success px-24 py-12 border border-0">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                </svg>
-                <span class="ms-2">
-                  搜尋
-                </span>
-            </button>
-
-
-          <!-- </div> -->
 
         </div>
       </div>
-    
-      <div class="what-to-eat py-120  mx-auto">
-        <div class="background-top">
+      <div class="background-top">
 
-        </div>
-        <div class="text-center eat-today">
+      </div>
+      <div class="what-to-eat   mx-auto">
+        <!-- <div class="background-top"></div> -->
+        <div class="text-center eat-today mt-60">
           <h2 class="my-12">今天想吃些什麼</h2>
           <img src="/assets/images/Frame 68.png" alt="選個想吃的吧!" class="mb-40">
         </div>
@@ -216,15 +215,6 @@
             </div>
   
           </div>
-        </div>
-
-
-
-
-       
-
-          </div>
-
         </div>
 
       </div>
