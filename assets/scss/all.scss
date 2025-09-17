@@ -2,6 +2,8 @@
 @import "./utils/variables";
 @import "../../node_modules/bootstrap";
 
+@import "./utils/utilities";
+
 @import "./layout/header.scss";
 @import "./layout/footer.scss";
 @import "./base/base";
