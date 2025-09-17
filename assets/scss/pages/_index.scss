@@ -24,7 +24,7 @@
   height: 542px;
 
   /* 設定背景圖片 */
-  background: url("/assets/images/assortment-delicious-dishes-rustic-table-1.png")
+  background: url("/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png")
     no-repeat center center;
   background-size: cover;
 
@@ -49,14 +49,15 @@
     height: 100%;
 
     /* 設定背景圖片 */
-    background: url("/assets/images/assortment-delicious-dishes-rustic-table-1.png")
+    background: url("/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png")
       no-repeat center center;
     background-size: cover;
 
     /* 設定遮罩圖片 */
-    -webkit-mask: url("/assets/images/banner-mask-white.png") no-repeat center
-      center;
-    mask: url("/assets/images/banner-mask-white.png") no-repeat center center;
+    -webkit-mask: url("/assets/images/index-image/banner-mask-white.png")
+      no-repeat center center;
+    mask: url("/assets/images/index-image/banner-mask-white.png") no-repeat
+      center center;
 
     /* 確保遮罩圖片完整顯示在元素內 */
     -webkit-mask-size: contain;
@@ -193,6 +194,11 @@
   flex-direction: column;
   justify-content: center;
   width: 90%;
+  margin-bottom: 12px;
+}
+
+.search-box-wannaeat,
+.search-box-dnt {
   border-bottom: 1px solid white;
 }
 
@@ -209,7 +215,7 @@
   .search-box-where {
     width: 100%;
     max-width: 192px;
-
+    margin-bottom: 0px;
     border-bottom: 0px solid white;
   }
   .search-box-wannaeat,
@@ -402,9 +408,7 @@
 
 .what-to-eat {
   position: relative;
-  // background: url(/assets/images/background-top.png) no-repeat center bottom;
-  // background-size: cover;
-  // z-index: 1;
+
   .container-fluid {
     max-width: 1296px; // 限制最大寬度
   }
@@ -417,7 +421,8 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: url(/assets/images/background-top.png) no-repeat center bottom;
+  background: url(/assets/images/index-image/background-top.png) no-repeat
+    center bottom;
   background-size: contain;
   z-index: -1;
 }
