@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+
+    <!-- start import icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=report"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- end import icon -->
+  </head>
+  <body class="bg-primary-50">
+    <%- include('./layout/header'); -%>
+
+    <div class="container mx-auto my-5">
+      <div class="p-6 rounded-5 bg-white">
+        <!-- 搜尋表單 -->
+        <div class="row g-3 mb-5">
+          <div class="col-lg-3">
+            <label for="eat-what" class="form-label fs-4 text-primary-950"
+              >我想吃</label
+            >
+            <input
+              type="text"
+              class="form-control fs-5 text-primary-950"
+              id="eat-what"
+              placeholder="牛肉麵"
+            />
+          </div>
+          <div class="col-lg-3">
+            <label for="not-add" class="form-label fs-4 text-primary-950"
+              >不要加</label
+            >
+            <input
+              type="text"
+              class="form-control fs-5 text-primary-950"
+              id="not-add"
+              placeholder="蔥"
+            />
+          </div>
+          <div class="col-lg-3">
+            <label for="where" class="form-label fs-4 text-primary-950"
+              >在哪裡</label
+            >
+            <input
+              type="text"
+              class="form-control fs-5 text-primary-950"
+              id="where"
+              placeholder="台北市"
+            />
+          </div>
+          <div class="col-lg-3 mt-lg-auto">
+            <button
+              type="button"
+              class="btn rounded-pill w-100 fs-5 bg-secondary-700 text-white d-flex align-items-center justify-content-center"
+            >
+              <i data-feather="search" width="16px" height="16px"></i
+              ><span class="ms-2">搜尋</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 近期紀錄 -->
+        <div class="mb-3">
+          <div>
+            <label class="form-label fs-4 text-primary-950">近期紀錄</label>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                牛肉麵 / 辣 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                蛋包飯 / 辣 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                咖哩飯 / 辣 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button
+                class="btn w-100 d-none d-lg-block fs-5 bg-primary-50 text-primary-900"
+              >
+                炒麵 / 蔥 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button
+                class="btn w-100 d-none d-lg-block fs-5 bg-primary-50 text-primary-900"
+              >
+                壽司 / 芥末 / 台北市
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 套用清單 -->
+        <div class="mb-3 mb-lg-0">
+          <div>
+            <label class="form-label fs-4 text-primary-950">套用清單</label>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                愛店
+              </button>
+            </div>
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                絕不吃
+              </button>
+            </div>
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
+          </div>
+        </div>
+
+        <!-- 回報餐點資訊 -->
+        <div class="row d-none d-lg-block">
+          <div class="d-flex justify-content-end align-items-center">
+            <p class="mb-0 me-4 fs-4 text-primary-950">找不到想要的餐點嗎?</p>
+            <button
+              class="btn border-gray-500 border-1 d-flex align-items-center fs-5 bg-primary-50 text-gray-900 py-1"
+            >
+              <i
+                class="uis-exclamation-triangle icon-danger"
+                width="12px"
+                height="12px"
+              ></i>
+              <span class="ms-2 fs-5 text-gray-900">回報餐點資訊</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <!-- start import icon -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- end import icon -->
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
