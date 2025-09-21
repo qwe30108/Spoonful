@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="meals-info py-9">
+      <div class="container">
+        <div class="row jc-center">
+          <div class="info-left col-6">
+            <div id="foodCarousel" class="carousel slide" data-bs-ride="carousel">
+              <!-- 大圖區 -->
+              <div class="carousel-inner pb-6">
+                <div class="carousel-item active">
+                  <img
+                    src="../assets/images/fresh-vegetable-soup-with-chopsticks-gourmet-delight-generated-by-ai.jpg"
+                    class="d-block w-100 rounded"
+                    alt="清燉牛肉麵附圖1"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../assets/images/gourmet-pork-ramen-soup-with-fresh-vegetables-generative-ai.jpg"
+                    class="d-block w-100 rounded"
+                    alt="清燉牛肉麵附圖2"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../assets/images/high-angle-noodles-meal-assortment.jpg"
+                    class="d-block w-100 rounded"
+                    alt="清燉牛肉麵附圖3"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../assets/images/closeup-bowl-beef-vegetable-noodles-wooden-table.jpg"
+                    class="d-block w-100 rounded"
+                    alt="清燉牛肉麵附圖4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="../assets/images/high-angle-view-noodles-bowl.jpg"
+                    class="d-block w-100 rounded"
+                    alt="清燉牛肉麵附圖5"
+                  />
+                </div>
+              </div>
+
+              <!-- 左右按鈕 -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#foodCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bg-primary-500 rounded-circle"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#foodCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bg-primary-500 rounded-circle"></span>
+              </button>
+            </div>
+
+            <!-- 縮圖列 -->
+            <div class="d-flex justify-content-center gap-2">
+              <img
+                src="../assets/images/fresh-vegetable-soup-with-chopsticks-gourmet-delight-generated-by-ai.jpg"
+                class="thumb"
+                data-bs-target="#foodCarousel"
+                data-bs-slide-to="0"
+              />
+              <img
+                src="../assets/images/gourmet-pork-ramen-soup-with-fresh-vegetables-generative-ai.jpg"
+                class="thumb"
+                data-bs-target="#foodCarousel"
+                data-bs-slide-to="1"
+              />
+              <img
+                src="../assets/images/high-angle-noodles-meal-assortment.jpg"
+                class="thumb"
+                data-bs-target="#foodCarousel"
+                data-bs-slide-to="2"
+              />
+              <img
+                src="../assets/images/closeup-bowl-beef-vegetable-noodles-wooden-table.jpg"
+                class="thumb"
+                data-bs-target="#foodCarousel"
+                data-bs-slide-to="3"
+              />
+              <img
+                src="../assets/images/high-angle-view-noodles-bowl.jpg"
+                class="thumb"
+                data-bs-target="#foodCarousel"
+                data-bs-slide-to="4"
+              />
+            </div>
+          </div>
+          <div class="info-right col-6">
+            <h1 class="info-title">清燉牛肉麵</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 元件 -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">內容</div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+            <button type="button" class="btn btn-primary">確定</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
