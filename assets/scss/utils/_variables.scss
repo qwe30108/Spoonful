@@ -373,6 +373,18 @@ $theme-colors: (
   "secondary-100": $secondary-100,
   "secondary-50": $secondary-50,
 
+  "gray-50": $gray-50,
+  "gray-100": $gray-100,
+  "gray-200": $gray-200,
+  "gray-300": $gray-300,
+  "gray-400": $gray-400,
+  "gray-500": $gray-500,
+  "gray-600": $gray-600,
+  "gray-700": $gray-700,
+  "gray-800": $gray-800,
+  "gray-900": $gray-900,
+  "gray-950": $gray-950,
+
   "alert": $alert,
 
   "primary": $primary,
@@ -495,7 +507,7 @@ $spacers: (
   // 2: $spacer * 0.5,
   // 3: $spacer,
   // 4: $spacer * 1.5,
-  // 5: $spacer * 3,,,,,,,
+  // 5: $spacer * 3,,,,,,,,,,,,,,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -692,7 +704,8 @@ $font-family-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base: var(--#{$prefix}font-sans-serif) !default;
+$font-family-base: "GenSenRounded", sans-serif !default;
+// $font-family-base: var(--#{$prefix}font-sans-serif) !default;
 $font-family-code: var(--#{$prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins

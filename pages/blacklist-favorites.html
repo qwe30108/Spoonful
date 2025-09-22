@@ -18,7 +18,7 @@
                         <li class="py-12 ">
                             <a href="#">
 
-                                <button type="button" class="left-list-options ">
+                                <button type="button" class="all-unset ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                                     <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
                                     </svg>
@@ -29,7 +29,7 @@
                         <li class="py-12 ">
                             <a href="#">
 
-                                <button type="button" class="left-list-options ">
+                                <button type="button" class="all-unset ">
     
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
@@ -41,7 +41,7 @@
                         <li class="py-12">
                             <a href="#">
 
-                                <button type="button" class="left-list-options ">
+                                <button type="button" class="all-unset ">
     
                                     <svg width="16" height="17" viewBox="0 0 16 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_74_1069)">
@@ -63,41 +63,373 @@
             </div>
 
             <div class="col-md-9 px-40 py-40 right-list">
+                <div class="d-flex justify-content-between align-items-center">
 
-                <ul class="nav nav-tabs justify-content-start border-0" id="pills-tab" role="tablist">
-                    <li class="nav-item  " role="presentation">
-                        <button class="nav-link active border-0" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info" aria-selected="true">
-                            愛店
-                        </button>
-                    </li>
-                    <li class="nav-item me-4" role="presentation">
-                        <button class="nav-link" id="pills-record-tab" data-bs-toggle="pill" data-bs-target="#pills-record" type="button" role="tab" aria-controls="pills-record" aria-selected="false">
-                            絕不吃
-                        </button>
-                    </li>
-                </ul>
-        
+                    <ul class="nav nav-tabs justify-content-start " id="pills-tab" role="tablist">
+                        <li class="nav-item  " role="presentation">
+                            <button class="nav-link active border-0" id="pills-info-tab" data-bs-toggle="pill" data-bs-target="#pills-info" type="button" role="tab" aria-controls="pills-info" aria-selected="true">
+                                愛店
+                            </button>
+                        </li>
+                        <li class="nav-item me-4" role="presentation">
+                            <button class="nav-link" id="pills-record-tab" data-bs-toggle="pill" data-bs-target="#pills-record" type="button" role="tab" aria-controls="pills-record" aria-selected="false">
+                                絕不吃
+                            </button>
+                        </li>
+                    </ul>
+    
+                    <button class="add-button ">+</button>
+                </div>
+
                 <div class="tab-content">
-                    <div class="tab-pane fade show active border-bottom" id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab" tabindex="0">
+                    <div class="tab-pane fade show active " id="pills-info" role="tabpanel" aria-labelledby="pills-info-tab" tabindex="0">
                         <div class="card mb-3 border-0 ">
-                            <div class="row g-0">
+                            <div class="row g-0 py-32 border-bottom ">
                                 <div class="col-md-4">
-                                    <img src="/assets/images/fresh-vegetable-soup-with-chopsticks-gourmet-delight-generated-by-ai.jpg" class="img-fluid rounded" alt="餐點圖片">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/pick-up-noodles-near.jpg)">
+                                        
+                                    </div>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
                                     <div class="card-body">
-                                        <h5 class="card-title">清燉牛肉麵</h5>
-                                        <p class="card-text"><small class="text-muted">牛私廚</small></p>
+                                        <h5 class="card-title">
+                                            清燉牛肉麵
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                牛私廚
+                                            </small>
+                                        </p>
             
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/omelet-rice-ketchup.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            茄汁蛋包飯
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                小林家
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
 
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/curry-nugget.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            炸雞塊咖哩
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                十六夜屋
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/gratin-pasta.jpg)">
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            焗烤海鮮義大利麵
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                義汁小豬
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/shrimp-dumpling.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            蝦仁蒸餃
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                九龍港點
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/soup-dumplings.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            鮮肉小籠包
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                無名小籠包
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/tiramisu-cube.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            經典提拉米蘇
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                特雷維索咖啡
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/lemon-cake.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            老奶奶檸檬蛋糕
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                拉克司烘焙
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/hotdog-fries.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            美式經典熱狗堡
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                羅斯福堡
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="card mb-3 border-0 ">
+                            <div class="row g-0 py-32 border-bottom ">
+                                <div class="col-md-4">
+                                    <div class="img-container rounded" style="background-image: url(/assets/images/blacklist-favorites-image/steak-on-board.jpg)">
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-md-8 d-flex flex-row justify-content-between align-items-center">
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            翼板牛排
+                                        </h5>
+                                        <p class="card-text ">
+                                            <img src="/assets/images/blacklist-favorites-image/shop.png" alt="">
+                                            <small class="text-muted">
+                                                飛行員牛排
+                                            </small>
+                                        </p>
+            
+                                    </div>
+                                    <div class="col-md-1 d-flex align-items-center">
+                                        <button type="button" class="all-unset">
+    
+                                            <div class="delete-button ">
+                                                <img src="/assets/images/blacklist-favorites-image/delete.png" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab" tabindex="0">
                         絕不吃
                     </div>
+
+                    <nav aria-label="Page navigation example ">
+                        <ul class="pagination d-flex justify-content-center">
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true">&lt;</span>
+                            </a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item page-show"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item page-show"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&gt;</span>
+                            </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

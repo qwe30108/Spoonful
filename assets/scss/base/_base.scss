@@ -7,8 +7,12 @@ img {
   margin: 0 auto;
   object-fit: cover;
 }
+
 .pt-12 {
   padding-top: 12px;
+}
+.pb-32 {
+  padding-bottom: 32px;
 }
 .py-12 {
   padding-top: 12px;
@@ -17,6 +21,14 @@ img {
 .py-16 {
   padding-top: 16px;
   padding-bottom: 16px;
+}
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .py-120 {
@@ -34,6 +46,13 @@ img {
 .px-32 {
   padding-left: 32px;
   padding-right: 32px;
+}
+.ps-20 {
+  padding-left: 20px;
+}
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .ms-20 {
@@ -68,16 +87,4 @@ img {
 
 .mt-60 {
   margin-top: 60px;
-}
-.ps-20 {
-  padding-left: 20px;
-}
-.px-40 {
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.py-40 {
-  padding-top: 40px;
-  padding-bottom: 40px;
 }
