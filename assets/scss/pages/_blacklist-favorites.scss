@@ -1,0 +1,60 @@
+body {
+  background-color: rgba(255, 245, 234, 1);
+}
+
+/* 預設頁籤樣式（未被點擊時） */
+.nav-tabs .nav-link {
+  background-color: #fff;
+  color: black; /* 設定文字顏色 */
+  border: none; /* 移除邊框 */
+}
+
+/* 點擊後啟用頁籤樣式 */
+.nav-tabs .nav-link.active {
+  background-color: rgba(229, 156, 10, 1); /* 白色背景 */
+  color: white; /* 文字顏色 */
+  border: none; /* 移除邊框 */
+}
+
+/* 移除 nav-tabs 本身的底部邊框，避免衝突 */
+.nav-tabs {
+  border-bottom: none;
+}
+
+/* 確保內容區域沒有額外間距 */
+.tab-content {
+  margin-top: 0;
+  padding-top: 1rem; /* 依需求調整 */
+}
+.tab-content {
+  background-color: white;
+}
+.nav-tabs {
+  --bs-nav-tabs-border-width: 0;
+}
+
+.left-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.right-list,
+.left-list {
+  background-color: white;
+  border-radius: 32px;
+}
+.left-list {
+  height: 306px;
+}
+.left-list-options {
+  all: unset;
+}
+.left-list li:hover {
+  background-color: rgba(229, 156, 10, 1);
+  color: white;
+}
+.left-list a {
+  text-decoration: none; /* 移除底線 */
+  color: inherit; /* 繼承父元素的文字顏色 */
+  display: block;
+}
