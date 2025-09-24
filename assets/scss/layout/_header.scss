@@ -1,7 +1,25 @@
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  @include lg-pad {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+  }
+}
+
 .navbar-toggler {
   border: none;
 }
 
-.navbar-collapse {
-  width: 50%;
+.offcanvas-body {
+  @include lg-pad {
+    background-color: $primary-50;
+    border-radius: 12px;
+  }
+  .dropdown {
+    @include lg-pad {
+      border-top: 1px solid $primary-900;
+      padding-top: 16px;
+    }
+  }
 }
