@@ -1,0 +1,11 @@
+.footer-top {
+  background-image: url(/assets/images/footer-top-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 146px;
+  @include mobile {
+    background-image: url(/assets/images/footer-top-bg-sm.png);
+    height: 69px;
+  }
+}
