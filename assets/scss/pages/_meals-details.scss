@@ -1,6 +1,19 @@
+body {
+  background-color: #fff5ea;
+  font-family: GenSenRounded;
+}
+.carousel-inner {
+  aspect-ratio: 4/3; /* 固定比例 */
+  overflow: hidden;
+}
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* 保持比例裁切 */
+}
 .thumb {
   width: 100px;
-  height: 70px;
+  height: 100px;
   object-fit: cover;
   border-radius: 6px;
   cursor: pointer;
@@ -11,4 +24,59 @@
 .thumb.active {
   opacity: 1;
   border: 2px solid #f0ad4e;
+}
+.thumb-row {
+  max-width: 100%; /* 和大圖一樣 */
+}
+
+/* 當 checkbox 被勾選時，按鈕背景變色 */
+.btn-check + .btn {
+  background-color: var(--bs-primary-50);
+  transition: background-color 0.15s ease-in-out;
+}
+.btn-check:checked + .btn {
+  background-color: var(--bs-secondary-500);
+  color: white;
+}
+
+//切換 icon 顯示
+.btn-check + .btn .fi-sr-heart {
+  display: none;
+}
+.btn-check + .btn .fi-rr-heart {
+  display: inline-block;
+}
+.btn-check:checked + .btn .fi-rr-heart {
+  display: none;
+}
+.btn-check:checked + .btn .fi-sr-heart {
+  display: inline-block;
+}
+
+// 食材標籤
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bs-primary-50);
+  color: var(--bs-primary-900);
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.chip:hover {
+  background: var(--bs-primary-600);
+  color: white;
+}
+
+.chip-icon {
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 50%;
 }
