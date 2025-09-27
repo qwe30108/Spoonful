@@ -1,0 +1,13 @@
+.return-tab {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  @include lg-pad {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.rounded-panel {
+  background-color: $white;
+  border-radius: 40px;
+}

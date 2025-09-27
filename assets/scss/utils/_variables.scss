@@ -322,6 +322,10 @@ $primary-300: #ffcd68;
 $primary-200: #ffd98d;
 $primary-100: #ffe8bb;
 $primary-50: #fff5ea;
+<<<<<<< HEAD
+=======
+$primary: $primary-500;
+>>>>>>> origin/feature/navbar/files
 
 $secondary-950: #082d00;
 $secondary-900: #0f5900;
@@ -334,11 +338,20 @@ $secondary-300: #9ad191;
 $secondary-200: #c3e2bd;
 $secondary-100: #d3efce;
 $secondary-50: #e8f7e5;
+<<<<<<< HEAD
 
 $alert: #c31e1e;
 
 $primary: $blue !default;
 $secondary: $gray-600 !default;
+=======
+$secondary: $secondary-500;
+
+$alert: #c31e1e;
+
+// $primary: $blue !default;
+// $secondary: $gray-600 !default;
+>>>>>>> origin/feature/navbar/files
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -373,6 +386,7 @@ $theme-colors: (
   "secondary-100": $secondary-100,
   "secondary-50": $secondary-50,
 
+<<<<<<< HEAD
   "gray-50": $gray-50,
   "gray-100": $gray-100,
   "gray-200": $gray-200,
@@ -384,6 +398,19 @@ $theme-colors: (
   "gray-800": $gray-800,
   "gray-900": $gray-900,
   "gray-950": $gray-950,
+=======
+  "gray-950": $gray-950,
+  "gray-900": $gray-900,
+  "gray-800": $gray-800,
+  "gray-700": $gray-700,
+  "gray-600": $gray-600,
+  "gray-500": $gray-500,
+  "gray-400": $gray-400,
+  "gray-300": $gray-300,
+  "gray-200": $gray-200,
+  "gray-100": $gray-100,
+  "gray-50": $gray-50,
+>>>>>>> origin/feature/navbar/files
 
   "alert": $alert,
 
@@ -508,6 +535,7 @@ $spacers: (
   // 3: $spacer,
   // 4: $spacer * 1.5,
   // 5: $spacer * 3,,,,,,,,,,,,,
+
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -706,7 +734,7 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
 // stylelint-enable value-keyword-case
 $font-family-base: "GenSenRounded", sans-serif !default;
 // $font-family-base: var(--#{$prefix}font-sans-serif) !default;
-$font-family-code: var(--#{$prefix}font-monospace) !default;
+
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
 // $font-size-base affects the font size of the body text
