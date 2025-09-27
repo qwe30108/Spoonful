@@ -1,3 +1,452 @@
-.index-title {
-  font-size: 100px;
+// * {
+//   outline: 1px solid red;
+// }
+
+.mask-wrapper {
+  position: relative;
+  max-width: 1296px;
+  height: 520px;
+
+  margin: 0 auto;
+  // display: flex; // 設定為 Flex 容器
+  // flex-direction: column; // 垂直排列
+  // justify-content: start; // 垂直置中
+  // align-items: center; // 水平置中
+}
+
+/* 新的單一元素，同時設定背景圖和遮罩 */
+.masked-banner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 542px;
+
+  /* 設定背景圖片 */
+  background: url("/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png")
+    no-repeat center center;
+  background-size: cover;
+
+  /* 增加半透明黑色層，營造出圖片變暗的效果 */
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 542px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .masked-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* 設定背景圖片 */
+    background: url("/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png")
+      no-repeat center center;
+    background-size: cover;
+
+    /* 設定遮罩圖片 */
+    -webkit-mask: url("/assets/images/index-image/banner-mask-white.png")
+      no-repeat center center;
+    mask: url("/assets/images/index-image/banner-mask-white.png") no-repeat
+      center center;
+
+    /* 確保遮罩圖片完整顯示在元素內 */
+    -webkit-mask-size: contain;
+    mask-size: contain;
+
+    /* 設定遮罩模式為 luminance，這會讓背景圖只顯示在遮罩圖的黑色區域 */
+    mask-mode: luminance;
+    mask-position: center;
+
+    /* 增加半透明黑色層，營造出圖片變暗的效果 */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5); /* 這裡設定你想要的半透明顏色 */
+    }
+  }
+}
+
+.index-search-solgan {
+  color: white;
+  text-align: center;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+
+.search-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgba(159, 106, 0, 1);
+  gap: 1rem;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.87);
+  flex-direction: column;
+  align-items: center;
+  border-radius: 24px;
+  width: 90%;
+  max-width: 800px;
+  position: relative;
+}
+
+@media screen and (min-width: 992px) {
+  .search-box {
+    display: flex;
+    color: rgba(159, 106, 0, 1);
+    padding: 17px 20px;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 0.87);
+    border-radius: 24px;
+    align-items: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+.search-box-left {
+  display: flex;
+  justify-content: center;
+
+  flex-direction: column;
+  margin-right: auto;
+  width: 100%;
+  flex-grow: 1;
+  flex-wrap: nowrap;
+  align-items: center;
+  // > div {
+  //   // 直接子層 (.search-box-wannaeat / .search-box-dnt / .search-box-where)
+  //   // flex: 1; // 平均分配
+  //   min-width: 0; // 避免內容太長把其他擠爆
+  // }
+}
+@media screen and (min-width: 992px) {
+  .search-box-left {
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.search-box-divider {
+  height: 1px;
+  max-width: 295px;
+  // flex: 0 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .search-box-divider {
+    height: 54.5px;
+    // flex: 0 0 auto;
+  }
+}
+
+/* 顯示已選內容的區域 */
+#myDropdown .selected-items {
+  text-align: left;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  min-height: calc(1.5em + 0.75rem + 2px); /* 與按鈕高度保持一致 */
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+/* 讓已選標籤更美觀 */
+#myDropdown .selected-items .badge {
+  font-weight: normal;
+  font-size: 0.9em;
+  padding: 0.3em 0.6em;
+  background-color: transparent;
+  border: 1px solid rgba(195, 30, 30, 1);
+  color: rgba(195, 30, 30, 1);
+  border-radius: 10px;
+  flex-shrink: 0; /* 防止標籤被壓縮 */
+}
+
+/* 移除按鈕的樣式 */
+#myDropdown .selected-items .remove-item {
+  cursor: pointer;
+  margin-left: 0.5em;
+  font-weight: bold;
+}
+
+.search-box-wannaeat,
+.search-box-dnt,
+.search-box-where {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  margin-bottom: 12px;
+}
+
+.search-box-wannaeat,
+.search-box-dnt {
+  border-bottom: 1px solid white;
+}
+
+.search-box-wannaeat img {
+  color: rgba(159, 106, 0, 1);
+}
+.search-box-wannaeat input,
+.selected-items button {
+  padding-left: 0;
+}
+@media screen and (min-width: 992px) {
+  .search-box-wannaeat,
+  .search-box-dnt,
+  .search-box-where {
+    width: 100%;
+    max-width: 192px;
+    margin-bottom: 0px;
+    border-bottom: 0px solid white;
+  }
+  .search-box-wannaeat,
+  .search-box-dnt {
+    border-right: 1px solid white;
+  }
+}
+
+.my-selected-badge {
+  /* 設定文字顏色 */
+  color: rgba(195, 30, 30, 1);
+  /* 你的其他樣式，例如邊框和背景 */
+  background-color: transparent;
+  border: 1px solid rgba(195, 30, 30, 1);
+  height: 26px;
+  align-items: end;
+}
+
+/* 確保移除按鈕的顏色也正確 */
+.my-selected-badge .remove-item {
+  color: rgba(195, 30, 30, 1);
+}
+
+.search-box-dnt .dropdown-item {
+  color: rgba(77, 40, 0, 1);
+  label {
+    margin-left: 4px; /* 增加勾選框與文字間的間距 */
+  }
+}
+
+.where-selected-item {
+  color: rgba(77, 40, 0, 1);
+}
+
+/* 勾選後樣式：改變文字顏色和勾選框顏色 */
+.search-box-dnt .dropdown-item input[type="checkbox"]:checked {
+  /* 勾選後的勾選框顏色 */
+  accent-color: rgba(159, 106, 0, 1);
+}
+
+/* 隱藏原生勾選框 */
+.search-box-dnt .dropdown-item input[type="checkbox"] {
+  /* 將原生勾選框隱藏起來 */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 16px; /* 勾選框的寬度 */
+  height: 16px; /* 勾選框的高度 */
+  border: 1px solid rgba(255, 205, 104, 1); /* 預設邊框顏色 */
+  border-radius: 4px; /* 圓角 */
+  position: relative;
+  cursor: pointer;
+  outline: none;
+
+  /* 設定預設背景色 */
+  background-color: white;
+}
+
+/* 勾選後的樣式 */
+.search-box-dnt .dropdown-item input[type="checkbox"]:checked {
+  /* 改變背景色 */
+  background-color: rgba(159, 106, 0, 1);
+  border: 1px solid rgba(159, 106, 0, 1);
+}
+
+/* 創建白色的打勾符號 */
+.search-box-dnt .dropdown-item input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid white; /* 使用白色邊框 */
+  border-width: 0 2px 2px 0; /* 只顯示右邊和下邊的邊框，形成L形 */
+  transform: rotate(45deg); /* 將L形旋轉45度變成打勾 */
+}
+
+/* 下拉式選單的基礎樣式 */
+.search-box-dnt .dropdown-menu,
+.search-box-where .dropdown-menu {
+  background-color: rgba(255, 245, 234, 1);
+  max-height: 216px;
+  width: 100%;
+  overflow-y: scroll;
+
+  .dropdown-item {
+    color: rgba(77, 40, 0, 1);
+  }
+  /* 針對 Chrome, Edge 和 Safari 瀏覽器捲軸樣式 */
+  &::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 205, 104, 1);
+    border-radius: 8px;
+  }
+
+  /* 隱藏捲軸上下的三角形按鈕 */
+  &::-webkit-scrollbar-button {
+    display: none;
+    height: 0;
+    width: 0;
+  }
+
+  /* 針對 Firefox 瀏覽器捲軸樣式 */
+  scrollbar-color: rgba(255, 205, 104, 1) rgba(255, 245, 234, 1);
+  scrollbar-width: thin;
+}
+
+.search-button {
+  color: white;
+  /* 讓按鈕的父容器也參與 flex 佈局，確保對齊 */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  // width: 100%;
+}
+.search-box-dnt p {
+  margin-bottom: 4px; /* 移除底部預設邊距 */
+}
+
+/* 讓按鈕與文字對齊 */
+.search-box-dnt .dropdown-toggle {
+  display: flex; /* 設定為 flex 容器 */
+  position: relative;
+  align-items: center; /* 垂直置中對齊 */
+  justify-content: space-between; /* 讓內容與箭頭分開，各據兩邊 */
+  // max-width: 192px; /* 確保按鈕佔滿可用空間 */
+  width: 100%;
+  padding-left: 0;
+  padding-top: 0;
+  flex-wrap: nowrap;
+  border: none;
+  color: rgba(159, 106, 0, 1);
+}
+
+.search-box-dnt .dropdown-toggle::after {
+  // display: flex; /* 確保箭頭顯示為行內塊狀元素 */
+  // content: "";
+  position: absolute;
+  bottom: 15px; // 調整箭頭與按鈕底部的距離
+  right: 0; // 調整箭頭與按鈕右側的距離
+  display: inline-block;
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0;
+  border-left: 0.3em solid transparent;
+  color: rgba(44, 44, 44, 1);
+  margin-left: auto;
+}
+
+/* 讓按鈕與文字對齊 */
+.search-box-where .dropdown-toggle {
+  display: flex; /* 設定為 flex 容器 */
+  align-items: center; /* 垂直置中對齊 */
+  justify-content: space-between; /* 讓內容與箭頭分開，各據兩邊 */
+  // max-width: 192px; /* 確保按鈕佔滿可用空間 */
+  padding-left: 0;
+  padding-top: 0;
+  width: auto;
+  border: none;
+  color: rgba(159, 106, 0, 1);
+  width: 100%;
+}
+
+.search-box-where .dropdown-toggle::after {
+  // display: flex; /* 確保箭頭顯示為行內塊狀元素 */
+  content: "";
+  color: rgba(44, 44, 44, 1);
+  width: 6px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  margin-left: auto;
+}
+// .search-box-where .dropdown {
+//   max-width: 192px;
+// }
+
+.dropdown {
+  width: 100%;
+}
+
+.what-to-eat {
+  position: relative;
+
+  .container-fluid {
+    max-width: 1296px; // 限制最大寬度
+  }
+}
+.background-top {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: url(/assets/images/index-image/background-top.png) no-repeat
+    center bottom;
+  background-size: contain;
+  z-index: -1;
+}
+
+.eat-today img {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+}
+
+/* 在 375px 以下時改為兩欄佈局 */
+@media screen and (max-width: 768px) {
+  .food-types {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 8px; /* 縮小間距以適應小螢幕 */
+    padding: 0 16px; /* 增加左右內距 */
+  }
+
+  /* 隱藏原本的右欄結構 */
+  .right-column {
+    display: contents; /* 讓子元素直接成為 .food-types 的子元素 */
+    margin: 0 auto;
+  }
 }

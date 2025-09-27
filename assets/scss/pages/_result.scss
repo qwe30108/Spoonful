@@ -1,0 +1,64 @@
+.card {
+  border: none;
+}
+
+.result-card-container {
+  position: relative;
+}
+.img-custom {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+
+.card-body.card-body {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @media screen and (min-width: 992px) {
+    height: 270px;
+    overflow: hidden;
+  }
+}
+
+.pagination .page-link {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yellow-brown-food-background {
+  height: 500px;
+  background: url("/assets/images/yellow-brown-food.jpg") no-repeat center
+    center;
+  background-size: cover;
+
+  -webkit-mask-image: linear-gradient(black, black),
+    url("/assets/images/background-top.png");
+  mask-image: linear-gradient(black, black),
+    url("/assets/images/background-top.png");
+  -webkit-mask-size: 100% 100%, 100% 50px;
+  mask-size: 100% 100%, 100% 50px;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center center, center bottom;
+  mask-position: center center, center bottom;
+  -webkit-mask-composite: exclude;
+  mask-composite: exclude;
+  stroke-width: 0;
+  margin-bottom: 60px;
+
+  padding-top: 80px;
+  @media screen and (min-width: 992px) {
+    -webkit-mask-size: 100% 100%, 100% 115px;
+    mask-size: 100% 100%, 100% 115px;
+
+    height: 380px;
+    padding-top: 140px;
+    margin-bottom: 120px;
+  }
+}
