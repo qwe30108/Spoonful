@@ -15,7 +15,7 @@
   </head>
   <body class="bg-primary-50">
     <%- include('./layout/header'); -%>
-    <div class="yellow-brown-food-background">
+    <div class="yellow-brown-food-background index-page">
       <div class="search-box px-20 py-16 mx-auto">
         <div class="search-box-left row">
           <div class="search-box-wannaeat text-start d-flex col-md-3">
@@ -1449,6 +1449,12 @@
       feather.replace();
     </script>
     <!-- end import icon -->
+    <script>
+      const serachButton = document.querySelector(".search-button button");
+      serachButton.addEventListener("click", () => {
+        window.location.href = "register.html";
+      });
+    </script>
 
     <script type="module" src="../main.js"></script>
   </body>

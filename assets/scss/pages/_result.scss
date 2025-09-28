@@ -33,31 +33,24 @@
 
 .yellow-brown-food-background {
   height: 500px;
-  background: url("/assets/images/yellow-brown-food.jpg") no-repeat center
-    center;
-  background-size: cover;
+  background: url("/assets/images/searchbar-bg-sm.png"),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("/assets/images/yellow-brown-food.jpg");
 
-  -webkit-mask-image: linear-gradient(black, black),
-    url("/assets/images/background-top.png");
-  mask-image: linear-gradient(black, black),
-    url("/assets/images/background-top.png");
-  -webkit-mask-size: 100% 100%, 100% 50px;
-  mask-size: 100% 100%, 100% 50px;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center center, center bottom;
-  mask-position: center center, center bottom;
-  -webkit-mask-composite: exclude;
-  mask-composite: exclude;
-  stroke-width: 0;
+  background-position: center bottom, center center, center center;
+  background-size: 100% 50px, cover, cover;
+  background-repeat: no-repeat;
+
   margin-bottom: 60px;
-
   padding-top: 80px;
   @media screen and (min-width: 992px) {
-    -webkit-mask-size: 100% 100%, 100% 115px;
-    mask-size: 100% 100%, 100% 115px;
-
     height: 380px;
+    background: url("/assets/images/searchbar-bg.png"),
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/assets/images/yellow-brown-food.jpg");
+    background-position: center bottom, center center, center center;
+    background-size: 100% 115px, cover, cover;
+    background-repeat: no-repeat;
     padding-top: 140px;
     margin-bottom: 120px;
   }
