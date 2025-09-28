@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @mixin lg-pad {
   @media (max-width: 992px) {
     @content;
@@ -12,4 +13,95 @@
   @media (max-width: 375px) {
     @content;
   }
+=======
+body {
+  font-size: 14px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.pt-12 {
+  padding-top: 12px;
+}
+.pb-32 {
+  padding-bottom: 32px;
+}
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.py-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.px-20 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.px-32 {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.ps-20 {
+  padding-left: 20px;
+}
+.px-40 {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.ms-20 {
+  margin-left: 20px;
+}
+.me-12 {
+  margin-right: 12px;
+}
+.mb-12 {
+  margin-bottom: 12px;
+}
+.mb-24 {
+  margin-bottom: 24px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.my-12 {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.mx-12 {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.mx-24 {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+>>>>>>> origin/chih
 }
