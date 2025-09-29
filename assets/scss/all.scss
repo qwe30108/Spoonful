@@ -1,23 +1,24 @@
-@import "./utils/fonts";
+@import './utils/fonts';
 
-@import "../../node_modules/bootstrap/scss/functions";
-@import "./utils/variables";
-@import "../../node_modules/bootstrap";
+@import '../../node_modules/bootstrap/scss/functions';
+@import './utils/variables';
+@import '../../node_modules/bootstrap';
 
-@import "./utils/utilities";
-@import "./base/base";
+@import './utils/utilities';
+@import './base/base';
 
-@import "./components/button";
-@import "./components/card";
+@import './components/button';
+@import './components/card';
 
-@import "./layout/header.scss";
-@import "./layout/footer.scss";
-@import "./layout/footertop.scss";
+@import './layout/header.scss';
+@import './layout/footer.scss';
+@import './layout/footertop.scss';
 
-@import "./pages/index.scss";
-@import "./pages/return.scss";
-@import "./pages/result.scss";
-@import "./pages/report-incorrect";
-@import "./pages/login-register";
-@import "./pages/blacklist-favorites";
-@import "./pages/meals-details";
+@import './pages/index.scss';
+@import './pages/about.scss';
+@import './pages/return.scss';
+@import './pages/result.scss';
+@import './pages/report-incorrect';
+@import './pages/login-register';
+@import './pages/blacklist-favorites';
+@import './pages/meals-details';
