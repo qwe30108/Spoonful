@@ -402,15 +402,20 @@
 //   max-width: 192px;
 // }
 
-.dropdown {
-  width: 100%;
-}
+// .dropdown {
+//   width: 100%;
+// }
 
 .what-to-eat {
   position: relative;
 
   .container-fluid {
     max-width: 1296px; // 限制最大寬度
+  }
+
+  //
+  .dropdown {
+    width: 100%;
   }
 }
 .background-top {
