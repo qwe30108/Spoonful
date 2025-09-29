@@ -24,13 +24,12 @@
   height: 542px;
 
   /* 設定背景圖片 */
-  background: url("/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png")
-    no-repeat center center;
+  background: url('/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png') no-repeat center center;
   background-size: cover;
 
   /* 增加半透明黑色層，營造出圖片變暗的效果 */
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -49,15 +48,12 @@
     height: 100%;
 
     /* 設定背景圖片 */
-    background: url("/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png")
-      no-repeat center center;
+    background: url('/assets/images/index-image/assortment-delicious-dishes-rustic-table-1.png') no-repeat center center;
     background-size: cover;
 
     /* 設定遮罩圖片 */
-    -webkit-mask: url("/assets/images/index-image/banner-mask-white.png")
-      no-repeat center center;
-    mask: url("/assets/images/index-image/banner-mask-white.png") no-repeat
-      center center;
+    -webkit-mask: url('/assets/images/index-image/banner-mask-white.png') no-repeat center center;
+    mask: url('/assets/images/index-image/banner-mask-white.png') no-repeat center center;
 
     /* 確保遮罩圖片完整顯示在元素內 */
     -webkit-mask-size: contain;
@@ -69,7 +65,7 @@
 
     /* 增加半透明黑色層，營造出圖片變暗的效果 */
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       top: 0;
       left: 0;
@@ -251,13 +247,13 @@
 }
 
 /* 勾選後樣式：改變文字顏色和勾選框顏色 */
-.search-box-dnt .dropdown-item input[type="checkbox"]:checked {
+.search-box-dnt .dropdown-item input[type='checkbox']:checked {
   /* 勾選後的勾選框顏色 */
   accent-color: rgba(159, 106, 0, 1);
 }
 
 /* 隱藏原生勾選框 */
-.search-box-dnt .dropdown-item input[type="checkbox"] {
+.search-box-dnt .dropdown-item input[type='checkbox'] {
   /* 將原生勾選框隱藏起來 */
   appearance: none;
   -webkit-appearance: none;
@@ -276,15 +272,15 @@
 }
 
 /* 勾選後的樣式 */
-.search-box-dnt .dropdown-item input[type="checkbox"]:checked {
+.search-box-dnt .dropdown-item input[type='checkbox']:checked {
   /* 改變背景色 */
   background-color: rgba(159, 106, 0, 1);
   border: 1px solid rgba(159, 106, 0, 1);
 }
 
 /* 創建白色的打勾符號 */
-.search-box-dnt .dropdown-item input[type="checkbox"]:checked::after {
-  content: "";
+.search-box-dnt .dropdown-item input[type='checkbox']:checked::after {
+  content: '';
   position: absolute;
   top: 1px;
   left: 4px;
@@ -390,7 +386,7 @@
 
 .search-box-where .dropdown-toggle::after {
   // display: flex; /* 確保箭頭顯示為行內塊狀元素 */
-  content: "";
+  content: '';
   color: rgba(44, 44, 44, 1);
   width: 6px;
   height: 10px;
@@ -426,8 +422,7 @@
   left: 0;
   right: 0;
   width: 100%;
-  background: url(/assets/images/index-image/background-top.png) no-repeat
-    center bottom;
+  background: url(/assets/images/index-image/background-top.png) no-repeat center bottom;
   background-size: contain;
   z-index: -1;
 }
@@ -453,5 +448,102 @@
   .right-column {
     display: contents; /* 讓子元素直接成為 .food-types 的子元素 */
     margin: 0 auto;
+  }
+}
+.like-count-btn {
+  background-color: var(--bs-primary-900);
+  &:hover {
+    background-color: var(--bs-secondary-500);
+  }
+}
+.card-text-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; /* 讓背景撐滿整個寬度 */
+  background-color: rgba(0, 0, 0, 0.5); /* 預設半透明黑底 */
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease; /* 平滑過渡 */
+  &:hover {
+    background-color: var(--bs-secondary-500);
+  }
+}
+.card:hover .card-text-background {
+  background-color: var(--bs-secondary-500);
+}
+.card:hover .like-count-btn {
+  background-color: var(--bs-secondary-500);
+}
+/* 文字超過行數時省略成 ... */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* 顯示 1 行，多餘文字省略 */
+  line-clamp: 1; /* 未來標準屬性，部分瀏覽器會吃 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bowl-icon {
+  color: var(--bs-primary-500);
+}
+.new-meals-small-title {
+  font-family: ChenYuluoyan;
+}
+.food-label {
+  background-color: var(--bs-primary-900);
+}
+.new-meals-card {
+  background-color: var(--bs-primary-50);
+  border: 0;
+  &:hover {
+    background-color: var(--bs-secondary-50);
+    .food-label {
+      background-color: var(--bs-secondary-500);
+    }
+  }
+}
+.mySwiper .swiper-pagination {
+  bottom: -15px; /* 預設是 0，可以改成負數讓它掉到容器外 */
+}
+.w-30 {
+  width: 30%;
+}
+.w-70 {
+  width: 70%;
+}
+.object-fit-cover {
+  object-fit: cover;
+}
+/* 手機版保持 4:3 */
+.ratio-sm-4x3 {
+  position: relative;
+  width: 100%;
+  padding-top: 75%; /* 4:3 */
+}
+.ratio-sm-4x3 > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.coriander-width {
+  width: 100%;
+}
+/* 桌機版以上取消 4:3，改成自動拉伸等高 */
+@media (min-width: 768px) {
+  .ratio-sm-4x3 {
+    padding-top: 0;
+    height: 100%;
+  }
+  .ratio-sm-4x3 > img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .coriander-width {
+    width: 70%;
   }
 }
