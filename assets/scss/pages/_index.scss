@@ -1,3 +1,6 @@
+body {
+  background-color: white;
+}
 // * {
 //   outline: 1px solid red;
 // }
@@ -417,12 +420,9 @@
 .background-top {
   position: absolute;
   top: 0;
-  bottom: 0;
-
   left: 0;
-  right: 0;
   width: 100%;
-  background: url(/assets/images/index-image/background-top.png) no-repeat center bottom;
+  background: url(assets/images/background-top.png) no-repeat center bottom;
   background-size: contain;
   z-index: -1;
 }
@@ -449,6 +449,10 @@
     display: contents; /* 讓子元素直接成為 .food-types 的子元素 */
     margin: 0 auto;
   }
+}
+.taiwanese-food-card {
+  object-fit: cover;
+  object-position: center;
 }
 .like-count-btn {
   background-color: var(--bs-primary-900);
@@ -486,7 +490,7 @@
 .bowl-icon {
   color: var(--bs-primary-500);
 }
-.new-meals-small-title {
+.small-title {
   font-family: ChenYuluoyan;
 }
 .food-label {
