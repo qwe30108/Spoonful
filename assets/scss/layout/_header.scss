@@ -23,6 +23,14 @@
       padding-top: 16px;
     }
   }
+
+  .dropdown-menu {
+    background-color: $primary-50;
+    @include lg-pad {
+      background-color: $white;
+    }
+  }
+
   .userimg {
     width: 28px;
     height: 28px;
