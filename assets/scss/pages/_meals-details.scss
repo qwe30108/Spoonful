@@ -80,3 +80,20 @@ body {
   padding: 0;
   border-radius: 50%;
 }
+// 回報餐點資訊
+.btn-report {
+  border: 1px solid var(--bs-gray-500);
+  color: var(--bs-gray-900);
+  &:hover {
+    border: 1px solid var(--bs-secondary-400);
+    background-color: var(--bs-secondary-400);
+    color: white;
+  }
+}
+//分享餐點
+.btn-green {
+  background-color: var(--bs-secondary-700);
+  &:hover {
+    background-color: var(--bs-primary-600);
+  }
+}
