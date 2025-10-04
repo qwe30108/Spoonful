@@ -203,10 +203,6 @@ body {
   .dropdown {
     width: 100%;
   }
-
-  .dropdown {
-    width: 100%;
-  }
 }
 
 .search-box-wannaeat,
@@ -425,7 +421,17 @@ body {
     width: 100%;
   }
 }
-// }
+.what-to-eat {
+  position: relative;
+  background-image: url(/assets/images/background-top.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+
+  .container-fluid {
+    max-width: 1296px; // 限制最大寬度
+  }
+}
 
 .what-to-eat {
   position: relative;
