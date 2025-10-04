@@ -11,7 +11,7 @@
 
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/header-logout'); -%>
 
 
     <div class="container mx-auto">
@@ -131,7 +131,7 @@
               </div>
             </div>
             <div class="search-button col-md-3">
-                <button type="button" class=" rounded-pill text-bg-success px-24 py-12 border border-0">
+                <button type="button" class=" rounded-pill btn btn-secondary-700 px-24 py-12 border border-0">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg>
@@ -160,7 +160,7 @@
             <!-- 日式料理大卡片 - 桌面版佔較大比例，手機版佔 50% -->
             <div class="col-6 col-lg-5 ">
               <div class="card-lg-lg image-with-gradient">
-                <img src="/assets/images/index-image/tuna-sushi.png" alt="壽司" class="japan-food h-100">
+                <img src="/assets/images/index-image/tuna-sushi.png" alt="壽司" class="taiwanese-food-card">
                 <div class="card-lg-green-banner "></div>
                 <h3 class="card-lg-banner-text">日式料理</h3>
               </div>
@@ -171,13 +171,13 @@
                 <!-- 第一行 -->
                 <div class="col-6 col-md-4">
                   <div class="card-md  image-with-gradient">
-                    <img src="/assets/images/index-image/pasta-with-tomato-sauce-parmesan.png" alt="義國風味" class="h-100">
+                    <img src="/assets/images/index-image/pasta-with-tomato-sauce-parmesan.png" alt="義國風味" class="taiwanese-food-card">
                     <h3 class="card-md-banner-text">義國風味</h3>
                   </div>
                 </div>
                 <div class="col-6 col-md-4">
                   <div class="card-md  image-with-gradient">
-                    <img src="/assets/images/index-image/korean-food-fried-rice-with-kimchi-serve-with-fried-egg.png" alt="韓國美食" class="h-100">
+                    <img src="/assets/images/index-image/korean-food-fried-rice-with-kimchi-serve-with-fried-egg.png" alt="韓國美食" class=" taiwanese-food-card">
                     <h3 class="card-md-banner-text">韓國美食</h3>
                   </div>
                 </div>
@@ -185,20 +185,20 @@
                 <div class="col-6 col-md-4">
 
                   <div class="card-md  image-with-gradient">
-                    <img src="/assets/images/index-image/tom-kha-kai-pan-frying-with-kaffir-lime-leaves-lemongrass-red-onion-galangal-chilli.png" alt="泰式料理" class="h-100">
+                    <img src="/assets/images/index-image/tom-kha-kai-pan-frying-with-kaffir-lime-leaves-lemongrass-red-onion-galangal-chilli.png" alt="泰式料理" class="taiwanese-food-card">
                     <h3 class="card-md-banner-text">泰式料理</h3>
                   </div>
                 </div>
                 <div class="col-6 col-md-4">
 
                   <div class="card-md  image-with-gradient">
-                    <img src="/assets/images/index-image/front-view-delicious-meat-cheeseburger-with-french-fries-cutting-board-dark-background-fast-food-meal-snack-dinner-dish-sandwich.png" alt="美式經典" class="h-100">
+                    <img src="/assets/images/index-image/front-view-delicious-meat-cheeseburger-with-french-fries-cutting-board-dark-background-fast-food-meal-snack-dinner-dish-sandwich.png" alt="美式經典" class="taiwanese-food-card">
                     <h3 class="card-md-banner-text">美式經典</h3>
                   </div>
                 </div>
                 <div class="col-6 col-md-8">
                   <div class="card-long image-with-gradient">
-                    <img src="/assets/images/index-image/close-up-food-served-table.png" alt="台式小吃" class="w-100 h-100 taiwanese-food-card">
+                    <img src="/assets/images/index-image/close-up-food-served-table.png" alt="台式小吃" class="taiwanese-food-card">
                     <h3 class="card-long-banner-text">台式小吃</h3>
                   </div>
                 </div>
@@ -207,12 +207,12 @@
           </div>
         </div>
       </div>
-    </div>
+    
 
-
+      <div class="background-top"></div>
       <!-- 大家都想吃 -->
-      <div class="everybody-eat mb-10">
-        <div class="text-center  mt-10">
+      <div class="everybody-eat bg-primary-50 mb-10">
+        <div class="text-center  pt-10">
           <h2 class="mb-9 text-primary-950">大家都想吃</h2>
         </div>
         <div class="container">
@@ -421,7 +421,7 @@
           </div>
         </div>
       </div>
-      <div class="about-us pt-5 pt-md-10">
+      <div class="about-us pt-5 pt-md-10 mb-120">
         <div class="container">
           <div class="row align-items-center rounded-5 bg-primary-50 p-4 p-md-9 mx-1">
             <div class="about-us-text col-md-6">
@@ -449,6 +449,7 @@
       </div>
 
     </div>
+    <div class="footer-top"></div>
 
 
     <%- include('./layout/footer'); -%>
