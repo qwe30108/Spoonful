@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module" crossorigin src="/spoonful/assets/main-CBQ73yCt.js"></script>
+    <link rel="stylesheet" crossorigin href="/spoonful/assets/main-Br6g55AQ.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-0">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Spoonful食噗否</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul
+          class="navbar-nav justify-content-end justify-content-center-lg flex-grow-1 pe-3 my-4"
+        >
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" aria-current="page" href="#"
+              >最新消息</a
+            >
+          </li>
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" href="search.html">檢索頁面</a>
+          </li>
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" href="about.html"
+              >關於食噗否</a
+            >
+          </li>
+          <div class="dropdown">
+            <button
+              class="btn btn-white dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="/spoonful/assets/user-DoYmSRZY.png"
+                class="userimg me-1"
+                alt="會員圖片"
+              />
+              使用者姓名
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-primary-950" href="#">個人資料</a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-primary-950"
+                  href="blacklist-favorites"
+                  >我的黑名單/喜愛清單</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-950" href="#"
+                  >分享餐點紀錄</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-950" href="#">登出</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <main class="bg-primary-50">
+      <div class="container">
+        <div class="return-tab">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li
+              class="nav-item d-flex aling-item-center mx-4"
+              role="presentation"
+            >
+              <input
+                class="nav-link active d-flex"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="radio"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+                name="options"
+                checked
+              />
+              <label class="h5 ms-2 my-3" for="">回報新餐點</label>
+            </li>
+            <li class="nav-item d-flex" role="presentation">
+              <input
+                class="nav-link"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="radio"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+                name="options"
+              />
+              <label class="h5 ms-2 my-3" for="">回報錯誤資訊</label>
+            </li>
+          </ul>
+          <!-- 內文 -->
+          <div class="tab-content p-9 rounded-panel" id="pills-tabContent">
+            <!-- 回報新餐點區塊 -->
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <div class="row g-3">
+                <form action="" class="d-lg-flex">
+                  <!-- 左區塊 -->
+                  <div class="col-lg-7">
+                    <!-- 餐點名稱 -->
+                    <div class="mb-3">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="餐點名稱(必填)"
+                          id="diningName"
+                        ></textarea>
+                        <label for="diningName">餐點名稱(必填)</label>
+                      </div>
+                    </div>
+                    <!-- 店名 -->
+                    <div class="mb-3">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="店名(必填)"
+                          id="storeName"
+                        ></textarea>
+                        <label for="storeName">店名(必填)</label>
+                      </div>
+                    </div>
+                    <!-- 地點 -->
+                    <div class="mb-3">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="地點(必填)"
+                          id="address"
+                        ></textarea>
+                        <label for="address">地點(必填)</label>
+                      </div>
+                    </div>
+                    <!-- 增加標籤 -->
+                    <div class="mb-3">
+                      <div class="form-floating">
+                        <textarea
+                          class="form-control"
+                          placeholder="增加標籤"
+                          id="jobSummary"
+                          style="height: 160px"
+                          maxlength="300"
+                        ></textarea>
+                        <label for="jobSummary">增加標籤</label>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 右區塊 -->
+                  <!-- 增加圖片 -->
+                  <div class="col-lg-4 mx-auto">
+                    <div class="image-upload-container text-center bg-gray-200">
+                      <input
+                        type="file"
+                        id="image-upload-input"
+                        accept="image/*"
+                        style="display: none"
+                      />
+
+                      <label
+                        for="image-upload-input"
+                        class="upload-placeholder"
+                      >
+                        <span class="upload-text">上傳圖片</span>
+                      </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 text-center">
+                    <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-secondary-700 rounded-pill mt-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    送出
+                  </button>
+
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <!-- <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div> -->
+                        <div class="modal-body">
+                          <h5>感謝您的回報</h5>
+                          <p>系統已紀錄您的回報<br>
+                             新資訊/錯誤資訊將由管理人員確認後新增<br>
+                             如有其他問題，請聯絡我們<br>
+                             我們會盡快為您處理</p>
+                        </div>
+                        <div class="modal-footer text-center">
+                          <button type="button" class="btn btn-gray-300" data-bs-dismiss="modal">關閉</button>
+                          <button type="button" class="btn btn-secondary-700">繼續</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                </form>
+              </div>
+            
+            <!-- 回報錯誤資訊區塊 -->
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+
+            <div class="row">
+              <div class="col-md-6">
+
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2" for="report-meals">
+                        餐點
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-meals">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2" for="report-restaurant">
+                        店名
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-restaurant">
+                </div>
+            </div>
+    
+
+
+            <div class="col-md-6">
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2" for="report-address">
+                        地址
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-address">
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2 " for="report-other">
+                        其他
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-other">
+                </div>
+            </div>
+        </div>
+        <div class="send-incorrect d-flex align-items-center justify-content-center mt-3">
+
+            <button type="button" class="btn btn-secondary-700 rounded-pill">送出</button>
+        </div>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer-top bg-primary-50"></div>
+ <footer class="nav navbar-expand-lg footer-bg">
+  <div class="container py-5">
+    <div class="container-fluid">
+      <div class="footer-logo float-lg-start">
+        <a class="nav-link" href="index.html">
+          <p class="text-white">Spoonful</p>
+          <p class="text-white">食噗否</p>
+        </a>
+      </div>
+      <ul
+        class="navbar-nav d-flex justify-content-center mb-4 text-white footer-links"
+      >
+        <li><a class="nav-link px-4 py-2" href="#">常見問題</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">聯絡我們</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">服務條款</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">隱私政策</a></li>
+      </ul>
+      <p class="text-center copy">© 權利說明</p>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>

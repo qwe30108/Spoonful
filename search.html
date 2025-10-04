@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+
+    <!-- start import icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=report"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/solid.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <!-- end import icon -->
+    <script type="module" crossorigin src="/spoonful/assets/main-CBQ73yCt.js"></script>
+    <link rel="stylesheet" crossorigin href="/spoonful/assets/main-Br6g55AQ.css">
+  </head>
+  <body class="bg-primary-50">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-0">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Spoonful食噗否</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul
+          class="navbar-nav justify-content-end justify-content-center-lg flex-grow-1 pe-3 my-4"
+        >
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" aria-current="page" href="#"
+              >最新消息</a
+            >
+          </li>
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" href="search.html">檢索頁面</a>
+          </li>
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" href="about.html"
+              >關於食噗否</a
+            >
+          </li>
+          <div class="dropdown">
+            <button
+              class="btn btn-white dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="/spoonful/assets/user-DoYmSRZY.png"
+                class="userimg me-1"
+                alt="會員圖片"
+              />
+              使用者姓名
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-primary-950" href="#">個人資料</a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-primary-950"
+                  href="blacklist-favorites"
+                  >我的黑名單/喜愛清單</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-950" href="#"
+                  >分享餐點紀錄</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-950" href="#">登出</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container mx-auto my-5">
+      <div class="p-6 my-120 rounded-5 bg-white">
+        <!-- 搜尋表單 -->
+        <div class="row g-3 mb-5">
+          <div class="col-lg-3">
+            <label for="eat-what" class="form-label fs-4 text-primary-950"
+              >我想吃</label
+            >
+            <input
+              type="text"
+              class="form-control fs-5 text-primary-950"
+              id="eat-what"
+              placeholder="牛肉麵"
+            />
+          </div>
+          <div class="col-lg-3">
+            <label for="not-add" class="form-label fs-4 text-primary-950"
+              >不要加</label
+            >
+            <input
+              type="text"
+              class="form-control fs-5 text-primary-950"
+              id="not-add"
+              placeholder="蔥"
+            />
+          </div>
+          <div class="col-lg-3">
+            <label for="where" class="form-label fs-4 text-primary-950"
+              >在哪裡</label
+            >
+            <input
+              type="text"
+              class="form-control fs-5 text-primary-950"
+              id="where"
+              placeholder="台北市"
+            />
+          </div>
+          <div class="col-lg-3 mt-lg-auto">
+            <button
+              type="button"
+              class="btn rounded-pill w-100 fs-5 bg-secondary-700 text-white d-flex align-items-center justify-content-center"
+            >
+              <i data-feather="search" width="16px" height="16px"></i
+              ><span class="ms-2">搜尋</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 近期紀錄 -->
+        <div class="mb-3">
+          <div>
+            <label class="form-label fs-4 text-primary-950">近期紀錄</label>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                牛肉麵 / 辣 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                蛋包飯 / 辣 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                咖哩飯 / 辣 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button
+                class="btn w-100 d-none d-lg-block fs-5 bg-primary-50 text-primary-900"
+              >
+                炒麵 / 蔥 / 台北市
+              </button>
+            </div>
+            <div class="col-lg">
+              <button
+                class="btn w-100 d-none d-lg-block fs-5 bg-primary-50 text-primary-900"
+              >
+                壽司 / 芥末 / 台北市
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 套用清單 -->
+        <div class="mb-3 mb-lg-0">
+          <div>
+            <label class="form-label fs-4 text-primary-950">套用清單</label>
+          </div>
+          <div class="row g-3">
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                愛店
+              </button>
+            </div>
+            <div class="col-lg">
+              <button class="btn w-100 fs-5 bg-primary-50 text-primary-900">
+                絕不吃
+              </button>
+            </div>
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
+          </div>
+        </div>
+
+        <!-- 回報餐點資訊 -->
+        <div class="row d-none d-lg-block">
+          <div class="d-flex justify-content-end align-items-center">
+            <p class="mb-0 me-4 fs-4 text-primary-950">找不到想要的餐點嗎?</p>
+            <a
+              class="btn border-gray-500 border-1 d-flex align-items-center fs-5 text-gray-900 py-1"
+              href="return.html"
+            >
+              <i
+                class="uis-exclamation-triangle icon-danger"
+                width="12px"
+                height="12px"
+              ></i>
+              <span class="ms-2 fs-5 text-gray-900">回報餐點資訊</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-top bg-primary-50"></div>
+ <footer class="nav navbar-expand-lg footer-bg">
+  <div class="container py-5">
+    <div class="container-fluid">
+      <div class="footer-logo float-lg-start">
+        <a class="nav-link" href="index.html">
+          <p class="text-white">Spoonful</p>
+          <p class="text-white">食噗否</p>
+        </a>
+      </div>
+      <ul
+        class="navbar-nav d-flex justify-content-center mb-4 text-white footer-links"
+      >
+        <li><a class="nav-link px-4 py-2" href="#">常見問題</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">聯絡我們</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">服務條款</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">隱私政策</a></li>
+      </ul>
+      <p class="text-center copy">© 權利說明</p>
+    </div>
+  </div>
+</footer>
+
+    <!-- start import icon -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- end import icon -->
+
+  </body>
+</html>

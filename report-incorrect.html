@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>report-incorrect</title>
+    <script type="module" crossorigin src="/spoonful/assets/main-CBQ73yCt.js"></script>
+    <link rel="stylesheet" crossorigin href="/spoonful/assets/main-Br6g55AQ.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-0">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Spoonful食噗否</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul
+          class="navbar-nav justify-content-end justify-content-center-lg flex-grow-1 pe-3 my-4"
+        >
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" aria-current="page" href="#"
+              >最新消息</a
+            >
+          </li>
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" href="search.html">檢索頁面</a>
+          </li>
+          <li class="nav-item me-4 mb-4 my-lg-auto">
+            <a class="nav-link text-primary-950" href="about.html"
+              >關於食噗否</a
+            >
+          </li>
+          <div class="dropdown">
+            <button
+              class="btn btn-white dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img
+                src="/spoonful/assets/user-DoYmSRZY.png"
+                class="userimg me-1"
+                alt="會員圖片"
+              />
+              使用者姓名
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item text-primary-950" href="#">個人資料</a>
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-primary-950"
+                  href="blacklist-favorites"
+                  >我的黑名單/喜愛清單</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-950" href="#"
+                  >分享餐點紀錄</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item text-primary-950" href="#">登出</a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div class="container">
+        <div class="d-flex mb-3">
+
+            <div class="form-check me-2">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+                <label class="form-check-label" for="radioDefault1">
+                    回報新餐點
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2" checked>
+                <label class="form-check-label" for="radioDefault2">
+                    回報錯誤資訊
+                </label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2" for="report-meals">
+                        餐點
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-meals">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2" for="report-restaurant">
+                        店名
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-restaurant">
+                </div>
+            </div>
+    
+
+
+            <div class="col-md-6">
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2" for="report-address">
+                        地址
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-address">
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="input-group mb-3 d-flex align-items-center">
+                    <!-- <div class="input-group-text"> -->
+                    <input class="form-check-input mt-0 me-2 border border-black rounded-0" type="checkbox" value="" aria-label="Checkbox for following text input" >
+                    <!-- </div> -->
+                    <label class="form-check-label me-2 " for="report-other">
+                        其他
+                    </label>
+                    <input type="text" class="form-control border-black rounded-0" aria-label="Text input with checkbox" id="report-other">
+                </div>
+            </div>
+        </div>
+        <div class="send-incorrect d-flex align-items-center justify-content-center">
+
+            <button type="button" class="btn btn-dark ">送出</button>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <footer class="nav navbar-expand-lg footer-bg">
+  <div class="container py-5">
+    <div class="container-fluid">
+      <div class="footer-logo float-lg-start">
+        <a class="nav-link" href="index.html">
+          <p class="text-white">Spoonful</p>
+          <p class="text-white">食噗否</p>
+        </a>
+      </div>
+      <ul
+        class="navbar-nav d-flex justify-content-center mb-4 text-white footer-links"
+      >
+        <li><a class="nav-link px-4 py-2" href="#">常見問題</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">聯絡我們</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">服務條款</a></li>
+        <li><a class="nav-link px-4 py-2" href="#">隱私政策</a></li>
+      </ul>
+      <p class="text-center copy">© 權利說明</p>
+    </div>
+  </div>
+</footer>
+
+    <script>
+  // 獲取整個 input-group 的父層
+  const inputGroup = document.querySelector('.input-group');
+  // 獲取 text input
+  const textInput = document.getElementById('report-meals');
+  
+  // 監聽整個 input-group 的點擊事件
+  inputGroup.addEventListener('click', (event) => {
+    // 判斷點擊的目標是否不是 text input 本身，以避免重複觸發
+    if (event.target !== textInput) {
+      // 將焦點移到 text input
+      textInput.focus();
+    }
+  });
+</script>
+  </body>
+</html>
