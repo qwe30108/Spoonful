@@ -7,9 +7,9 @@
     <title>login-register</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
+    <%- include('./layout/header-logout'); -%>
     <div class="container">
-      <div class="row">
+      <div class="row my-120">
         <div class="col-md-6 login-register-divider">
           <div class="login">
             <h2 class="text-center">登入帳號</h2>
@@ -69,15 +69,19 @@
           <div
             class="login d-flex flex-column align-items-center justify-content-center"
           >
-            <button type="button" class="btn btn-dark px-4 py-2 mb-2">
+            <a
+              type="button"
+              href="register.html"
+              class="btn btn-dark px-4 py-2 mb-2"
+            >
               註冊
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footertop'); -%> <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
   </body>

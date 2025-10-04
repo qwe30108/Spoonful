@@ -22,7 +22,7 @@
     <%- include('./layout/header'); -%>
 
     <div class="container mx-auto my-5">
-      <div class="p-6 rounded-5 bg-white">
+      <div class="p-6 my-120 rounded-5 bg-white">
         <!-- 搜尋表單 -->
         <div class="row g-3 mb-5">
           <div class="col-lg-3">
@@ -134,8 +134,9 @@
         <div class="row d-none d-lg-block">
           <div class="d-flex justify-content-end align-items-center">
             <p class="mb-0 me-4 fs-4 text-primary-950">找不到想要的餐點嗎?</p>
-            <button
+            <a
               class="btn border-gray-500 border-1 d-flex align-items-center fs-5 text-gray-900 py-1"
+              href="return.html"
             >
               <i
                 class="uis-exclamation-triangle icon-danger"
@@ -143,13 +144,13 @@
                 height="12px"
               ></i>
               <span class="ms-2 fs-5 text-gray-900">回報餐點資訊</span>
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </div>
 
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/footertop'); -%> <%- include('./layout/footer'); -%>
 
     <!-- start import icon -->
     <script>

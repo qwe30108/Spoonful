@@ -1,0 +1,5 @@
+.login-link {
+  @include lg-pad {
+    border-top: 1px solid $primary-900;
+  }
+}
