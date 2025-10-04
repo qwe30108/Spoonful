@@ -1,10 +1,25 @@
-@import '../../node_modules/bootstrap/scss/functions';
-@import './utils/variables';
-@import '../../node_modules/bootstrap';
+@import "./utils/fonts";
 
-@import './utils/utilities';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../node_modules/bootstrap";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import "./utils/utilities";
+@import "./base/base";
 
-@import './pages/index.scss';
+@import "./components/button";
+@import "./components/card";
+
+@import "./layout/header.scss";
+@import "./layout/header-logout.scss";
+@import "./layout/footer.scss";
+@import "./layout/footertop.scss";
+
+@import "./pages/index.scss";
+@import "./pages/return.scss";
+@import "./pages/result.scss";
+@import "./pages/report-incorrect";
+@import "./pages/login-register";
+@import "./pages/blacklist-favorites";
+@import "./pages/meals-details";
+@import "./pages/user";

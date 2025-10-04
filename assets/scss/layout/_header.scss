@@ -1,4 +1,40 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.navbar-brand {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  color: #f08c00;
+  @include lg-pad {
+    padding-top: 17.5px;
+    padding-bottom: 17.5px;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.offcanvas-body {
+  @include lg-pad {
+    background-color: $primary-50;
+    border-radius: 12px;
+  }
+  .dropdown {
+    @include lg-pad {
+      border-top: 1px solid $primary-900;
+      padding-top: 16px;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $primary-50;
+    @include lg-pad {
+      background-color: $white;
+    }
+  }
+
+  .userimg {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 }
