@@ -130,6 +130,8 @@ body {
   flex-grow: 1;
   flex-wrap: nowrap;
   align-items: center;
+
+  margin: 0;
   // > div {
   //   // 直接子層 (.search-box-wannaeat / .search-box-dnt / .search-box-where)
   //   // flex: 1; // 平均分配
@@ -342,6 +344,12 @@ body {
   align-items: flex-end;
   justify-content: center;
   // width: 100%;
+
+  @include lg-pad {
+    .btn {
+      width: 100%;
+    }
+  }
 }
 .search-box-dnt p {
   margin-bottom: 4px; /* 移除底部預設邊距 */
@@ -410,8 +418,7 @@ body {
     width: 100%;
   }
 }
-
-.what-to-eat {
+index/search-box .what-to-eat {
   position: relative;
   background-image: url(/assets/images/background-top.png);
   background-position: bottom;
@@ -420,11 +427,6 @@ body {
 
   .container-fluid {
     max-width: 1296px; // 限制最大寬度
-  }
-
-  //
-  .dropdown {
-    width: 100%;
   }
 }
 .background-top {
