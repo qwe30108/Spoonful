@@ -411,6 +411,10 @@ body {
 
 .what-to-eat {
   position: relative;
+  background-image: url(/assets/images/background-top.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
 
   .container-fluid {
     max-width: 1296px; // 限制最大寬度
@@ -460,6 +464,14 @@ body {
   object-fit: cover;
   object-position: center;
 }
+
+.everybody-eat {
+  background-image: url(/assets/images/position-bottom-device-desktop.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-bottom: 120px;
+}
+
 .like-count-btn {
   background-color: var(--bs-primary-900);
   &:hover {
