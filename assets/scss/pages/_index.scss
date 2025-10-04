@@ -131,7 +131,6 @@ body {
   flex-wrap: nowrap;
   align-items: center;
 
-  margin: 0;
   // > div {
   //   // 直接子層 (.search-box-wannaeat / .search-box-dnt / .search-box-where)
   //   // flex: 1; // 平均分配
@@ -200,6 +199,10 @@ body {
   justify-content: center;
   width: 90%;
   margin-bottom: 12px;
+
+  .dropdown {
+    width: 100%;
+  }
 
   .dropdown {
     width: 100%;
@@ -433,6 +436,11 @@ body {
 
   .container-fluid {
     max-width: 1296px; // 限制最大寬度
+  }
+
+  //
+  .dropdown {
+    width: 100%;
   }
 }
 .background-top {
