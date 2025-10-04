@@ -38,9 +38,8 @@
 
 .yellow-brown-food-background {
   height: 500px;
-  background: url("/assets/images/searchbar-bg-sm.png"),
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("/assets/images/yellow-brown-food.jpg");
+  background: url('/assets/images/searchbar-bg-sm.png'), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('/assets/images/yellow-brown-food.jpg');
 
   background-position: center bottom, center center, center center;
   background-size: 100% 50px, cover, cover;
@@ -50,13 +49,22 @@
   padding-top: 80px;
   @media screen and (min-width: 992px) {
     height: 380px;
-    background: url("/assets/images/searchbar-bg.png"),
-      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-      url("/assets/images/yellow-brown-food.jpg");
+    background: url('/assets/images/searchbar-bg.png'), linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url('/assets/images/yellow-brown-food.jpg');
     background-position: center bottom, center center, center center;
     background-size: 100% 115px, cover, cover;
     background-repeat: no-repeat;
     padding-top: 140px;
     margin-bottom: 120px;
+  }
+}
+// 回報餐點資訊
+.btn-report {
+  border: 1px solid var(--bs-gray-500);
+  color: var(--bs-gray-900);
+  &:hover {
+    border: 1px solid var(--bs-secondary-400);
+    background-color: var(--bs-secondary-400);
+    color: white;
   }
 }
